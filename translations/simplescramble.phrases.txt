@@ -1,0 +1,143 @@
+"Phrases"
+{
+	"AdminScramble"
+	{
+		"en"		"scrambled the teams."
+	}
+	"AdminScrambleUnknownOption"
+	{
+		"#format"	"{1:s}"
+		"en"		"Unknown scramble option \"{1}\"."
+	}
+	"AdminScrambleRestart"
+	{
+		"en"		"scrambled the teams and restarted the round."
+	}
+	"AdminScrambleRestartSetupOnly"
+	{
+		"en"		"Rounds can only be restarted during the setup phase."
+	}
+	"AdminScrambleRound"
+	{
+		"en"		"queued team scramble for next round."
+	}
+	"ScrambleRoundAlreadyQueued"
+	{
+		"en"		"There is already a team scramble queued for the next round."
+	}
+	"ScrambleVoteDisabled"
+	{
+		"en"		"Scramble voting is disabled."
+	}
+	"ScrambleVoteCooldown"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} seconds must pass before another scramble vote may be called."
+	}
+	"ScrambleVoteWaitingForPlayers"
+	{
+		"en"		"You cannot vote to scramble teams during the waiting for players phase."
+	}
+	"CastScrambleVote"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} voted to scramble the teams."
+	}
+	"ScrambleVoteStatus"
+	{
+		"#format"	"{1:d},{2:d}"
+		"en"		"{1} of {2} needed votes cast."
+	}
+	"AlreadyCastScrambleVote"
+	{
+		"en"		"You have already voted to scramble the teams."
+	}
+	"ScrambleVotePassed"
+	{
+		"en"		"The vote to scramble the teams has passed!"
+	}
+	"ScrambleNextRound"
+	{
+		"en"		"The teams will be scrambled when the next round begins."
+	}
+	"ScrambleImmediate"
+	{
+		"en"		"The teams will be scrambled immediately."
+	}
+	"AutoScrambleNextRound"
+	{
+		"en"		"The teams will be auto-scrambled when the next round begins."
+	}
+	"AutoScrambleReason_RoundWinStreak"
+	{
+		"en"		"The round win streak limit was reached."
+	}
+	"AutoScrambleReason_DominationLead"
+	{
+		"en"		"The domination lead limit was reached."
+	}
+	"AutoScrambleReason_FragRatio"
+	{
+		"en"		"The frag ratio limit was reached."
+	}
+	"ScrambleResult"
+	{
+		"#format"	"{1:d},{2:d},{3:s}"
+		"en"		"Scramble moved {1} of {2} players to new teams ({3})."
+	}
+	"TeamStatsHeader"
+	{
+		"en"		"Team\tRatio\tSum\n-------------------------"
+	}
+	"TeamStats"
+	{
+		"#format"	"{1:s},{2:s},{3:d}"
+		"en"		"{1}\t{2}\t{3}"
+	}
+	"TeamStatsNoPerm"
+	{
+		"en"		"You do not have permission to view the team stats."
+	}
+	"AddBuddyMenuTitle"
+	{
+		"en"		"Add Buddy"
+	}
+	"RequestBuddy"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} received your buddy request."
+	}
+	"RequestBuddyNoPerm"
+	{
+		"en"		"You do not have permission to make buddy requests."
+	}
+	"AcceptBuddy"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1}'s buddy request accepted."
+	}
+	"RequestedBuddy"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} has requested to be your buddy."
+	}
+	"AcceptedBuddy"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} accepted your buddy request."
+	}
+	"AlreadyBuddy"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} is already your buddy."
+	}
+	"AlreadyRequestedBuddy"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} has already received a buddy request from you."
+	}
+	"SelfBuddyError"
+	{
+		"en"		"You cannot be buddies with yourself."
+	}
+}
