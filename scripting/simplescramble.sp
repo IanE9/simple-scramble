@@ -913,7 +913,6 @@ void PerformScramble(RespawnMode respawnMode, bool notify = true) {
 		g_ScrambleVoteScrambleTime = GetGameTime();
 	}
 	
-	// 2D array where the first value is the client's index and the second value is the client's score.
 	int clients[MAXPLAYERS];
 	int clientCount = 0;
 	
