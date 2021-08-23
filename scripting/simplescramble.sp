@@ -29,7 +29,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 public Plugin myinfo = {
 	name = "Simple Scramble",
-	author = "Wgooch",
+	author = "Ian",
 	description = "Very simple scramble functionality for TF2 Classic",
 	version = "1.2.2",
 	url = "https://github.com/IanE9/simple-scramble"
