@@ -757,32 +757,17 @@ bool MoveClientTeam(int client, int team, RespawnMode respawnMode) {
 				ChangeClientTeam(client, team);
 			}
 			case RespawnMode_Normal: {
-				if (IsPlayerAlive(client)) {
-					// Hack to prevent the player from suiciding when they change teams.
-					SetEntProp(client, Prop_Send, "m_lifeState", 2);
-				}
-				ChangeClientTeam(client, team);
-				TF2_RespawnPlayer(client);
+				ChangeClientTeamRespawn(client, team);
 			}
 			case RespawnMode_Retain: {
 				ClientRetainInfo retainInfo;
 				retainInfo.StoreClient(client);
-				if (IsPlayerAlive(client)) {
-					// Hack to prevent the player from suiciding when they change teams.
-					SetEntProp(client, Prop_Send, "m_lifeState", 2);
-				}
-				ChangeClientTeam(client, team);
-				TF2_RespawnPlayer(client);
+				ChangeClientTeamRespawn(client, team);
 				retainInfo.LoadClient(client);
 			}
 			case RespawnMode_Reset: {
-				if (IsPlayerAlive(client)) {
-					// Hack to prevent the player from suiciding when they change teams.
-					SetEntProp(client, Prop_Send, "m_lifeState", 2);
-				}
 				RemoveClientOwnedEntities(client);
-				ChangeClientTeam(client, team);
-				TF2_RespawnPlayer(client);
+				ChangeClientTeamRespawn(client, team);
 			}
 		}
 		return true;

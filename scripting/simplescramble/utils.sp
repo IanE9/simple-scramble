@@ -160,6 +160,22 @@ int GetClientMedigun(int client) {
 }
 
 /**
+ * Changes a client's team and respawns them.
+ *
+ * @param client    Client to change the team of.
+ * @param team      Team to put the client on.
+ * @noreturn
+ */
+void ChangeClientTeamRespawn(int client, int team) {
+	if (IsPlayerAlive(client)) {
+		// Hack to prevent the player from suiciding when they change teams.
+		SetEntProp(client, Prop_Send, "m_lifeState", 2);
+	}
+	ChangeClientTeam(client, team);
+	TF2_RespawnPlayer(client);
+}
+
+/**
  * Retrieves the short name of a team.
  *
  * @param team       Team to get the name of.
