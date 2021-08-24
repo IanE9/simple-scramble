@@ -31,7 +31,7 @@ public Plugin myinfo = {
 	name = "Simple Scramble",
 	author = "Ian",
 	description = "Very simple scramble functionality for TF2 Classic",
-	version = "1.2.2",
+	version = "1.2.3",
 	url = "https://github.com/IanE9/simple-scramble"
 };
 
