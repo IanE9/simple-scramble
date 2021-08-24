@@ -337,7 +337,7 @@ void RemoveColorCodes(char[] dest, int destLen, const char[] src, int srcLen = I
  * @return            False if the destination buffer cannot hold the value.
  */
 bool FormatRoundedFloat(char[] dest, int destLen, float value, int decimals) {
-	if (destLen != 0 || decimals > 16) {
+	if (destLen > 0 && decimals < 16) {
 		float fract = FloatFraction(value);
 		int fractIntMult = RoundFloat(Pow(10.0, float(decimals)));
 		fract *= fractIntMult;
