@@ -141,13 +141,13 @@ public void OnPluginStart() {
 	PluginStartAutoScrambleSystem();
 	
 	// ConVars
-	s_ConVar_ScrambleVoteEnabled = FindConVar("mp_teams_unbalance_limit");
-	s_ConVar_ScrambleVoteEnabled.AddChangeHook(conVarChanged_ScrambleVoteEnabled);
+	s_ConVar_ScrambleVoteEnabled = FindConVar("sv_vote_issue_scramble_teams_allowed");
+	s_ConVar_ScrambleVoteEnabled.AddChangeHook(conVarChanged_TeamsUnbalanceLimit);
 	g_ScrambleVoteEnabled = s_ConVar_ScrambleVoteEnabled.BoolValue;
 
-	s_ConVar_TeamsUnbalanceLimit = FindConVar("sv_vote_issue_scramble_teams_allowed");
-	s_ConVar_TeamsUnbalanceLimit.AddChangeHook(conVarChanged_TeamsUnbalanceLimit);
-	g_TeamsUnbalanceLimit = s_ConVar_ScrambleVoteEnabled.IntValue;
+	s_ConVar_TeamsUnbalanceLimit = FindConVar("mp_teams_unbalance_limit");
+	s_ConVar_TeamsUnbalanceLimit.AddChangeHook(conVarChanged_ScrambleVoteEnabled);
+	g_TeamsUnbalanceLimit = s_ConVar_TeamsUnbalanceLimit.IntValue;
 	
 	s_ConVar_ScrambleMethod = CreateConVar(
 		"ss_scramble_method", "1",
